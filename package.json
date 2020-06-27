@@ -1,5 +1,5 @@
 {
-  "name": "mailtrapper",
+  "name": "maitrap",
   "version": "1.0.0",
   "description": "A simple web based platform to catch local emails ",
   "main": "dist/index.js",
