@@ -1,16 +1,16 @@
+import * as chalk from 'chalk';
 import {Server} from 'socket.io';
 
 class Transporter {
-	private io: Server;
+	private readonly io: Server;
 
 	constructor(io: Server) {
 		this.io = io;
-		this.bootstrap();
 	}
 
-	private bootstrap() {
+	public bootstrap() {
 		this.io.on('connection', () => {
-			
+			console.log(chalk.green('Connection recieved. Transporter is handling it'));
 		});
 	}
 }

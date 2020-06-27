@@ -1,7 +1,7 @@
 import {Router} from 'express';
-import index from '../controller/homeController';
+import index from '../controller/home-controller';
 
-const route = Router();
+const route = Router(); // eslint-disable-line new-cap
 
 route.get('/', index);
 
